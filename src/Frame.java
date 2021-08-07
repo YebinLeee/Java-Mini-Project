@@ -1,4 +1,6 @@
 import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
 
 import javax.swing.JFrame;
@@ -17,11 +19,38 @@ public class Frame {
 		JTextArea txtArea = new JTextArea();  // 여러 줄의 텍스트 입력 (JTextField = 한 줄의 텍스트 입력)
 		// JTextField txtField = new JTextField(200); // 
 		
+		JPanel btnPanel = new JPanel(); // 버튼들을 넣을 패널 추가
+		JButton btn2 = new JButton("Exit"); // 프로그램을 종료하는 버튼 추가
+		
 		panel.setLayout(new BorderLayout()); // 패널을 원하는 특정한 위치에 이동
+		btnPanel.add(btn1);
+		btnPanel.add(btn2);
+		
 		panel.add(label, BorderLayout.NORTH); // 레이블을 위쪽에 추가
-		panel.add(btn1, BorderLayout.WEST); // 버튼을 왼쪽에 추가
+		panel.add(btnPanel, BorderLayout.WEST); // 버튼을 왼쪽에 추가
 		panel.add(txtArea, BorderLayout.CENTER); // textArea를 가운데에 추가
 		// panel.add(txtField, BorderLayout.CENTER);
+		
+		btn1.addActionListener(new ActionListener(){
+			
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				//txtArea.append("You are amazing!\n");
+				label.setText(txtArea.getText()); // txtArea에서 입력받은 텍스트로 레이블을 변경
+			}
+			
+		});
+		
+		btn2.addActionListener(new ActionListener() {
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.exit(0); // 프로그램 종료
+				
+			}
+		});
+		
 		
 		frame.add(panel); // 프레임에 페널 추가
 		
