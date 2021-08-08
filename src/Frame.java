@@ -3,12 +3,15 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.BorderLayout;
 
+import javax.swing.*;
+/*
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JButton;
 import javax.swing.JTextArea;
-// import javax.swing.JTextField;
+import javax.swing.JTextField;
+*/
 
 public class Frame {
 	public static void main(String[] args) {
@@ -32,25 +35,18 @@ public class Frame {
 		// panel.add(txtField, BorderLayout.CENTER);
 		
 		btn1.addActionListener(new ActionListener(){
-			
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				//txtArea.append("You are amazing!\n");
 				label.setText(txtArea.getText()); // txtArea에서 입력받은 텍스트로 레이블을 변경
 			}
-			
 		});
-		
 		btn2.addActionListener(new ActionListener() {
-
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0); // 프로그램 종료
-				
 			}
 		});
-		
 		
 		frame.add(panel); // 프레임에 페널 추가
 		
@@ -62,3 +58,4 @@ public class Frame {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 프로그램을 종료했을 때 모든 실행도 종료되도록
 	}
 }
+

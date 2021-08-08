@@ -1,14 +1,16 @@
-import javax.swing.JFrame;
+/* 
+ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JPasswordField;
+import javax.swing.JButton;
+*/
+import javax.swing.*;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-
-import javax.swing.JButton;
 
 public class Login extends JFrame{
 	public Login() {
@@ -29,6 +31,7 @@ public class Login extends JFrame{
 		
 		logBtn.addActionListener(new ActionListener() {
 
+			@SuppressWarnings("deprecation")
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// ID, PW 입력받아 텍스트 비교
@@ -43,9 +46,7 @@ public class Login extends JFrame{
 				else {
 					JOptionPane.showMessageDialog(null, "You failed to log in");
 				}
-				
 			}
-			
 		});
 		add(panel);
 		
@@ -59,5 +60,5 @@ public class Login extends JFrame{
 	public static void main(String args[]) {
 		new Login();
 	}
-
 }
+
