@@ -46,7 +46,10 @@ public class Task extends JPanel {
 		this.add(done, BorderLayout.EAST);
 	}
 	
-	public static void main(String[] args) {
-		new AppFrame();
+	public void changeIndex(int num)
+	{
+		this.index.setText(num+"");
+		this.revalidate();
 	}
+
 }

@@ -1,6 +1,7 @@
 package classes;
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.GridLayout;
 
 import javax.swing.JPanel;
@@ -12,6 +13,20 @@ public class List extends JPanel{
 		layout.setVgap(5);
 		
 		this.setLayout(layout);
-		this.setBackground(Color.LIGHT_GRAY);
+		// this.setBackground(Color.LIGHT_GRAY);
+	}
+	
+	public void updateNumbers()
+	{
+		Component[] listItems = this.getComponents();
+		
+		for(int i=0;i<listItems.length;i++)
+		{
+			if(listItems[i] instanceof Task)
+			{
+				((Task)listItems[i].changeIndex(i+1));
+				
+			}
+		}
 	}
 }
