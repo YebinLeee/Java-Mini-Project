@@ -46,10 +46,24 @@ public class Task extends JPanel {
 		this.add(done, BorderLayout.EAST);
 	}
 	
+	// "done" 버튼 누른 후 실행
+	public JButton getDone() {
+		return done;
+	}
+	
+	// 각 업무의 인덱스 변경
 	public void changeIndex(int num)
 	{
 		this.index.setText(num+"");
 		this.revalidate();
+	}
+	
+	// 
+	public void changeState()
+	{
+		this.setBackground(Color.pink);
+		taskName.setBackground(Color.green);
+		checked = true;
 	}
 
 }

@@ -39,7 +39,7 @@ public class AppFrame extends JFrame{
 	}
 	
 	public void addListeners()
-	{
+	{ 
 		addTask.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mousePressed(MouseEvent e)
@@ -47,6 +47,16 @@ public class AppFrame extends JFrame{
 				Task task = new Task();
 				list.add(task);
 				list.updateNumbers(); // Task 추가 후 index Numbers 업데이트
+				
+				task.getDone().addMouseListener(new MouseAdapter()
+				{
+					@Override
+					public void mousePressed(MouseEvent e)
+					{
+						task.changeState();
+						revalidate();
+					}
+				});
 				revalidate();
 			}
 		});
