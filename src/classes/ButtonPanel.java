@@ -22,14 +22,14 @@ public class ButtonPanel extends JButton{
 		this.setPreferredSize(new Dimension(400,60));
 		this.setBackground(Color.black);
 		
-		addTask = new JButton("할일 추가");
+		addTask = new JButton("Add Task");
 		addTask.setBorder(emptyBorder);
 		addTask.setFont(new Font("Sans-serif", Font.PLAIN, 20));
 		
 		this.add(addTask);
 		
 		this.add(Box.createHorizontalStrut(20));
-		clear = new JButton("완료된 업무 모두 삭제하기");
+		clear = new JButton("Clear Completed Tasks");
 		clear.setBorder(emptyBorder);
 		clear.setFont(new Font("Sans-serif", Font.PLAIN, 20));
 		this.add(clear);

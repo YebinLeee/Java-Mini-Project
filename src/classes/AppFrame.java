@@ -3,6 +3,9 @@ package classes;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 public class AppFrame extends JFrame{
 	
@@ -16,7 +19,7 @@ public class AppFrame extends JFrame{
 	// Constructor
 	AppFrame()
 	{
-		this.setSize(400,800);
+		this.setSize(400,700);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
 		this.setLocationRelativeTo(null); // 가운데에 프레임이 출력되도록 설정
@@ -37,6 +40,14 @@ public class AppFrame extends JFrame{
 	
 	public void addListeners()
 	{
-		
+		addTask.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e)
+			{
+				Task task = new Task();
+				list.add(task);
+				revalidate();
+			}
+		});
 	}
 }

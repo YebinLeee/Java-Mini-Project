@@ -33,13 +33,13 @@ public class Task extends JPanel {
 		index.setHorizontalAlignment(JLabel.CENTER);
 		this.add(index,BorderLayout.WEST);
 		
-		taskName = new JTextField("업무를 여기다 적으세요!");
+		taskName = new JTextField("Your new task here!");
 		taskName.setBorder(BorderFactory.createEmptyBorder());
 		taskName.setBackground(Color.lightGray);
 		
 		this.add(taskName, BorderLayout.CENTER);
 		
-		done = new JButton("완료");
+		done = new JButton("Done");
 		done.setPreferredSize(new Dimension(40,20));
 		done.setBorder(BorderFactory.createEmptyBorder());
 		
