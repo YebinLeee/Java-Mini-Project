@@ -1,5 +1,6 @@
 package classes;
 
+import java.awt.Color;
 import java.awt.GridLayout;
 
 import javax.swing.JPanel;
@@ -11,6 +12,6 @@ public class List extends JPanel{
 		layout.setVgap(5);
 		
 		this.setLayout(layout);
+		this.setBackground(Color.LIGHT_GRAY);
 	}
-	
 }
