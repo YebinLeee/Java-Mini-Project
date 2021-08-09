@@ -46,6 +46,7 @@ public class AppFrame extends JFrame{
 			{
 				Task task = new Task();
 				list.add(task);
+				list.updateNumbers(); // Task 추가 후 index Numbers 업데이트
 				revalidate();
 			}
 		});

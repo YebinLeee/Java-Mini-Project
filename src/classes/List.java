@@ -7,7 +7,7 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 
 public class List extends JPanel{
-	
+
 	List(){
 		GridLayout layout = new GridLayout(10,1);
 		layout.setVgap(5);
@@ -22,9 +22,9 @@ public class List extends JPanel{
 		
 		for(int i=0;i<listItems.length;i++)
 		{
-			if(listItems[i] instanceof Task)
+			if(listItems[i] instanceof classes.Task)
 			{
-				((Task)listItems[i].changeIndex(i+1));
+				((Task)listItems[i]).changeIndex(i+1);
 				
 			}
 		}
