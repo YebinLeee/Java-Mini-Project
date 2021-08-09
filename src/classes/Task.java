@@ -62,8 +62,10 @@ public class Task extends JPanel {
 	public void changeState()
 	{
 		this.setBackground(Color.pink);
-		taskName.setBackground(Color.white);
+		taskName.setBackground(Color.black);
+		taskName.setForeground(Color.LIGHT_GRAY);
 		checked = true;
 	}
 
 }
+

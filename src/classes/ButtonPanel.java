@@ -48,3 +48,4 @@ public class ButtonPanel extends JButton{
 		return clear;
 	}
 }
+
