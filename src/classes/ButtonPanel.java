@@ -2,6 +2,7 @@ package classes;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 
 import javax.swing.BorderFactory;
@@ -19,19 +20,23 @@ public class ButtonPanel extends JButton{
 	// Constructor
 	ButtonPanel()
 	{
-		this.setPreferredSize(new Dimension(400,60));
-		this.setBackground(Color.black);
+		this.setLayout(new FlowLayout());
+		//this.setPreferredSize(new Dimension(300,60));
+		this.setBackground(Color.gray);
 		
 		addTask = new JButton("Add Task");
 		addTask.setBorder(emptyBorder);
-		addTask.setFont(new Font("Sans-serif", Font.PLAIN, 20));
+		addTask.setFont(new Font("IMÇý¹Î Regular", Font.PLAIN, 20));
+		addTask.setBackground(Color.white);
 		
 		this.add(addTask);
 		
 		this.add(Box.createHorizontalStrut(20));
 		clear = new JButton("Clear Completed Tasks");
 		clear.setBorder(emptyBorder);
-		clear.setFont(new Font("Sans-serif", Font.PLAIN, 20));
+		clear.setFont(new Font("IMÇý¹Î Regular", Font.PLAIN, 20));
+		clear.setBackground(Color.white);
+		
 		this.add(clear);
 	}
 	

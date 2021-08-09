@@ -3,6 +3,7 @@ package classes;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -19,6 +20,10 @@ public class AppFrame extends JFrame{
 	// Constructor
 	AppFrame()
 	{
+		this.setTitle("ToDo List");
+		
+		// this.setResizable(false);
+		this.setPreferredSize(new Dimension(400,700));
 		this.setSize(400,700);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		this.setVisible(true);
