@@ -8,6 +8,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 
 public class TitleBar extends JPanel{
+	
 	// Constructor
 	TitleBar(){
 		this.setPreferredSize(new Dimension(400,80));
