@@ -22,12 +22,13 @@ public class AppFrame extends JFrame{
 	{
 		this.setTitle("ToDo List");
 		
-		// this.setResizable(false);
-		this.setPreferredSize(new Dimension(400,700));
+		//this.setResizable(false);
+		//this.setPreferredSize(new Dimension(400,700));
 		this.setSize(400,700);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); // 프레임이 닫힐 때 프로그램도 함께 종료
 		this.setVisible(true);
 		this.setLocationRelativeTo(null); // 가운데에 프레임이 출력되도록 설정
+		this.setLayout(new BorderLayout());
 		
 		title = new TitleBar();
 		list = new List();

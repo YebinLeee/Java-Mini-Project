@@ -22,7 +22,7 @@ public class List extends JPanel{
 		
 		for(int i=0;i<listItems.length;i++)
 		{
-			if(listItems[i] instanceof classes.Task)
+			if(listItems[i] instanceof Task)
 			{
 				((Task)listItems[i]).changeIndex(i+1);
 				

@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 
 public class Task extends JPanel {
 	
-	private String[] tasks={"Java", "Algorithm", "Python", "MyHobby", "Game", "Youtube", "Study"};
+	private String[] tasks={"Java", "Algorithm Study", "ML Study", "Python", "Hobby", "School Work"};
 	
 	private JLabel index; 
 	private JTextField taskName; // 업무 제목
@@ -41,7 +41,7 @@ public class Task extends JPanel {
 		this.add(index,BorderLayout.WEST);
 		
 		
-		taskName = new JTextField("여기에 입력하세요");
+		taskName = new JTextField(null);
 		taskName.setBorder(BorderFactory.createEmptyBorder());
 		taskName.setFont(new Font("IM혜민 Regular", Font.PLAIN, 15));
 		taskName.setBackground(Color.LIGHT_GRAY);
@@ -65,7 +65,6 @@ public class Task extends JPanel {
 		this.add(done, BorderLayout.EAST);
 	}
 	
-	// "done" 버튼 누른 후 실행
 	public JButton getDone() {
 		return done;
 	}
@@ -85,6 +84,5 @@ public class Task extends JPanel {
 		taskName.setForeground(Color.LIGHT_GRAY);
 		checked = true;
 	}
-
 }
 
