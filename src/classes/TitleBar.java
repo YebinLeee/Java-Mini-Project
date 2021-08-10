@@ -24,4 +24,3 @@ public class TitleBar extends JPanel{
 		
 	}
 }
-

@@ -3,17 +3,23 @@ package classes;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JList;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.JTextField;
 
 public class Task extends JPanel {
 	
+	private String[] tasks={"Java", "Algorithm", "Python", "MyHobby", "Game", "Youtube", "Study"};
+	
 	private JLabel index; 
 	private JTextField taskName; // 업무 제목
+	private JList<String> taskList;
 	private JButton done; // 업무 확인 버튼
 	
 	private boolean checked; // 업무 완료 유무
@@ -31,16 +37,29 @@ public class Task extends JPanel {
 		index = new JLabel("");
 		index.setPreferredSize(new Dimension(20,20));
 		index.setHorizontalAlignment(JLabel.CENTER);
+		
 		this.add(index,BorderLayout.WEST);
 		
-		taskName = new JTextField(null);
+		
+		taskName = new JTextField("여기에 입력하세요");
 		taskName.setBorder(BorderFactory.createEmptyBorder());
+		taskName.setFont(new Font("IM혜민 Regular", Font.PLAIN, 15));
 		taskName.setBackground(Color.LIGHT_GRAY);
 		
+		
 		this.add(taskName, BorderLayout.CENTER);
+	
+		
+		/* 
+		taskList = new JList<String>(tasks);
+		taskList.setPreferredSize(new Dimension(20,40));
+		taskList.setBorder(BorderFactory.createEmptyBorder());
+		this.add(new JScrollPane(taskList), BorderLayout.NORTH);
+		*/
 		
 		done = new JButton("Done");
 		done.setPreferredSize(new Dimension(40,20));
+		done.setFont(new Font("IM혜민 Regular", Font.BOLD, 12));
 		done.setBorder(BorderFactory.createEmptyBorder());
 		
 		this.add(done, BorderLayout.EAST);
