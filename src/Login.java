@@ -1,5 +1,3 @@
-package practices;
-
 import javax.swing.*;
 import java.awt.*;
 
