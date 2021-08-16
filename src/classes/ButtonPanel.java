@@ -2,6 +2,7 @@ package classes;
 
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.border.Border;
 
 public class ButtonPanel extends JButton{
 

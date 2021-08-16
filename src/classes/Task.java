@@ -5,11 +5,12 @@ import javax.swing.*;
 
 public class Task extends JPanel {
 	
-	private String[] tasks={"Java", "Algorithm Study", "ML Study", "Python", "Hobby", "School Work"};
+	// private String[] tasks={"Java", "Algorithm Study", "ML Study", "Python", "Hobby", "School Work"};
 	
 	private JLabel index; 
 	private JTextField taskName; // 업무 제목
-	private JList<String> taskList;
+	// private JList<String> taskList;
+	private JLabel timer;
 	private JButton done; // 업무 확인 버튼
 	
 	private boolean checked; // 업무 완료 유무
@@ -53,6 +54,9 @@ public class Task extends JPanel {
 		done.setBorder(BorderFactory.createEmptyBorder());
 		
 		this.add(done, BorderLayout.EAST);
+		
+		timer = new JLabel();
+		
 	}
 	
 	public JButton getDone() {
