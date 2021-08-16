@@ -45,30 +45,30 @@ public class Stopwatch extends JButton implements ActionListener {
 		
 		// ½Ã, ºÐ, ÃÊ Text
 		timeLabel.setText(hours_string + ":" + minutes_string + ":" + seconds_string);
-		//timeLabel.setBounds(100,100,200,100);
-		timeLabel.setFont(new Font("IMÇý¹ÎÃ¼", Font.PLAIN, 15));
-		timeLabel.setBorder(BorderFactory.createBevelBorder(1));
+		timeLabel.setFont(new Font("IMÇý¹ÎÃ¼", Font.PLAIN, 20));
+		timeLabel.setBorder(BorderFactory.createEmptyBorder());
 		timeLabel.setOpaque(true);
 		timeLabel.setHorizontalAlignment(JTextField.CENTER);
+		timeLabel.setBackground(null);
 		
-		// start/stop , reset ¹öÆ°
-		//startButton.setBounds(100,200,100,50);
+		// start/stop ¹öÆ°
 		startButton.setFont(new Font("IMÇý¹ÎÃ¼", Font.ITALIC, 10));
 		startButton.setFocusable(false);
 		startButton.addActionListener(this);
+		startButton.setBackground(Color.black);
+		startButton.setForeground(Color.white);
 		
-		//resetButton.setBounds(200,200,100,50);
+		// reset ¹öÆ°
 		resetButton.setFont(new Font("IMÇý¹ÎÃ¼", Font.ITALIC, 10));
 		resetButton.setFocusable(false);
 		resetButton.addActionListener(this);
+		resetButton.setBackground(Color.black);
+		resetButton.setForeground(Color.white);
 		
 		this.setLayout(new FlowLayout());
 		this.add(timeLabel);
 		this.add(startButton);
-		this.add(resetButton);
-		
-		this.setBackground(Color.black);
-				
+		this.add(resetButton);				
 	}
 	
 	@Override

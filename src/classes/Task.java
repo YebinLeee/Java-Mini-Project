@@ -15,7 +15,7 @@ public class Task extends JPanel {
 	Task()
 	{
 		this.setPreferredSize(new Dimension(40,20));
-		this.setBackground(Color.yellow);
+		this.setBackground(new Color(0, 124, 173));
 		
 		this.setLayout(new BorderLayout());
 		
@@ -24,14 +24,15 @@ public class Task extends JPanel {
 		index = new JLabel("");
 		index.setPreferredSize(new Dimension(20,20));
 		index.setHorizontalAlignment(JLabel.CENTER);
+		index.setForeground(Color.white);
 		
 		this.add(index,BorderLayout.WEST);
 		
 		
-		taskName = new JTextField(null);
+		taskName = new JTextField("   ");
 		taskName.setBorder(BorderFactory.createEmptyBorder());
-		taskName.setFont(new Font("IMÇý¹Î Regular", Font.PLAIN, 15));
-		taskName.setBackground(Color.LIGHT_GRAY);
+		taskName.setFont(new Font("IMÇý¹Î Regular", Font.PLAIN, 20));
+		taskName.setBackground(new Color(232, 232, 232));
 		
 		
 		this.add(taskName, BorderLayout.CENTER);
@@ -40,6 +41,8 @@ public class Task extends JPanel {
 		done.setPreferredSize(new Dimension(40,20));
 		done.setFont(new Font("IMÇý¹Î Regular", Font.BOLD, 12));
 		done.setBorder(BorderFactory.createEmptyBorder());
+		done.setBackground(new Color(102, 102, 102));
+		done.setForeground(Color.white);
 		
 		this.add(done, BorderLayout.EAST);
 		
@@ -47,8 +50,9 @@ public class Task extends JPanel {
 		/* timer, stopwatch Panel */
 		
 		Stopwatch timerPanel = new Stopwatch();
+		timerPanel.setBorder(BorderFactory.createEmptyBorder());
+		timerPanel.setBackground(Color.white);
 		this.add(timerPanel, BorderLayout.SOUTH);
-		
 	}
 	
 	public JButton getDone() {

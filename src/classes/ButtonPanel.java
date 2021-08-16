@@ -16,7 +16,7 @@ public class ButtonPanel extends JButton{
 	{
 		this.setLayout(new FlowLayout());
 		//this.setPreferredSize(new Dimension(300,60));
-		this.setBackground(Color.gray);
+		this.setBackground(new Color(189, 234, 252));
 		
 		addTask = new JButton("Add Task");
 		addTask.setBorder(emptyBorder);

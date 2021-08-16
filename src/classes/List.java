@@ -6,11 +6,11 @@ import javax.swing.*;
 public class List extends JPanel{
 
 	List(){
-		GridLayout layout = new GridLayout(4,1);
-		layout.setVgap(5);
+		GridLayout layout = new GridLayout(5,1);
+		layout.setVgap(10);
 		
 		this.setLayout(layout);
-		// this.setBackground(Color.LIGHT_GRAY);
+		this.setBackground(Color.white);
 	}
 	
 	public void updateNumbers()
@@ -22,7 +22,6 @@ public class List extends JPanel{
 			if(listItems[i] instanceof Task)
 			{
 				((Task)listItems[i]).changeIndex(i+1);
-				
 			}
 		}
 	}
