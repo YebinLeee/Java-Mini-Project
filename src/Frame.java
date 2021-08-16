@@ -1,17 +1,6 @@
-import java.awt.Dimension;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.BorderLayout;
-
+package practices;
 import javax.swing.*;
-/*
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.JLabel;
-import javax.swing.JButton;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-*/
+import java.awt.*;
 
 public class Frame {
 	public static void main(String[] args) {

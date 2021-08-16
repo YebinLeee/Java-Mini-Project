@@ -1,10 +1,5 @@
-package practices;
-
 import javax.swing.*;
-import javax.swing.border.Border;
-
 import java.awt.*;
-
 
 // Runnable 인터페이스를 구현하는 타이머 스레드 TimerRunnable
 class TimerRunnable implements Runnable{
@@ -110,5 +105,4 @@ public class MyTimerThread extends JFrame{
 	public static void main(String[] args) {
 		new MyTimerThread();
 	}
-
 }

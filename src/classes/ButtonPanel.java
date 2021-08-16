@@ -1,14 +1,7 @@
 package classes;
 
-import java.awt.Color;
-import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
-
-import javax.swing.BorderFactory;
-import javax.swing.Box;
-import javax.swing.JButton;
-import javax.swing.border.Border;
+import java.awt.*;
+import javax.swing.*;
 
 public class ButtonPanel extends JButton{
 

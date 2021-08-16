@@ -1,10 +1,7 @@
 package classes;
 
-import java.awt.Color;
-import java.awt.Component;
-import java.awt.GridLayout;
-
-import javax.swing.JPanel;
+import java.awt.*;
+import javax.swing.*;
 
 public class List extends JPanel{
 
