@@ -8,8 +8,9 @@ public class Task extends JPanel {
 	private JLabel index; 
 	private JTextField taskName; // 업무 제목
 	private JButton done; // 업무 확인 버튼
-	
 	private boolean checked; // 업무 완료 유무
+	
+	private Stopwatch timerPanel; // 타이머 패널
 	
 	// Constructor
 	Task()
@@ -49,7 +50,7 @@ public class Task extends JPanel {
 		
 		/* timer, stopwatch Panel */
 		
-		Stopwatch timerPanel = new Stopwatch();
+		timerPanel = new Stopwatch();
 		timerPanel.setBorder(BorderFactory.createEmptyBorder());
 		timerPanel.setBackground(Color.white);
 		this.add(timerPanel, BorderLayout.SOUTH);
@@ -69,9 +70,9 @@ public class Task extends JPanel {
 	// 
 	public void changeState()
 	{
-		this.setBackground(Color.pink);
+		this.setBackground(new Color(240, 240, 240));
 		taskName.setBackground(Color.black);
-		taskName.setForeground(Color.LIGHT_GRAY);
+		taskName.setForeground(Color.orange);
 		checked = true;
 	}
 }

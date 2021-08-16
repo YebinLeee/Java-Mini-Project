@@ -17,6 +17,8 @@ public class Stopwatch extends JButton implements ActionListener {
 	int minutes = 0;
 	int hours = 0;
 	
+	boolean started = false;
+	
 	// seconds, minutes, hours을 string으로 표현(00으로 시작)
 	String seconds_string = String.format("%02d", seconds); 
 	String minutes_string = String.format("%02d", minutes);
@@ -37,8 +39,6 @@ public class Stopwatch extends JButton implements ActionListener {
 			timeLabel.setText(hours_string + ":" + minutes_string + ":" + seconds_string);
 		}
 	});
-	
-	boolean started = false;
 	
 	// Constructor
 	Stopwatch(){
@@ -93,24 +93,16 @@ public class Stopwatch extends JButton implements ActionListener {
 			startButton.setText("START");
 			reset();
 		}
-		
 	}
 	
-	void start() {
-		timer.start();
-	}
+	void start() { timer.start(); }
 	
-	void stop() {
-		timer.stop();
-	}
+	void stop() { timer.stop(); }
 	
 	void reset() {
 		timer.stop();
 		// 모든 value를 0으로 재설정
-		elapsedTime=0;
-		minutes=0;
-		hours=0;
-		seconds=0;
+		elapsedTime=0; minutes=0; hours=0; seconds=0;
 		
 		seconds_string = String.format("%02d", seconds); 
 		minutes_string = String.format("%02d", minutes);
@@ -118,5 +110,5 @@ public class Stopwatch extends JButton implements ActionListener {
 		
 		timeLabel.setText(hours_string + ":" + minutes_string + ":" + seconds_string);
 	}
-	
 }
+

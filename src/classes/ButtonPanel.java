@@ -25,13 +25,16 @@ public class ButtonPanel extends JButton{
 		
 		this.add(addTask);
 		
-		this.add(Box.createHorizontalStrut(30));
+		/*
+		 this.add(Box.createHorizontalStrut(30));
+		 
 		clear = new JButton("Clear Completed Tasks");
 		clear.setBorder(emptyBorder);
 		clear.setFont(new Font("IMÇý¹Î Regular", Font.PLAIN, 20));
 		clear.setBackground(Color.white);
 		
 		this.add(clear);
+		*/
 	}
 	
 	public JButton getAddTask() {

@@ -8,6 +8,7 @@ public class List extends JPanel{
 	List(){
 		GridLayout layout = new GridLayout(5,1);
 		layout.setVgap(10);
+		layout.setHgap(5);
 		
 		this.setLayout(layout);
 		this.setBackground(Color.white);
