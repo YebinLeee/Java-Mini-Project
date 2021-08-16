@@ -11,8 +11,8 @@ public class AppFrame extends JFrame{
 	private List list;
 	private ButtonPanel btnPanel;
 	
-	private JButton addTask; 
-	private JButton clear;
+	JButton addTask; 
+	JButton clear;
 	
 	// Constructor
 	AppFrame()

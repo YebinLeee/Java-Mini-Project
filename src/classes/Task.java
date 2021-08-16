@@ -4,13 +4,9 @@ import java.awt.*;
 import javax.swing.*;
 
 public class Task extends JPanel {
-	
-	// private String[] tasks={"Java", "Algorithm Study", "ML Study", "Python", "Hobby", "School Work"};
-	
+
 	private JLabel index; 
 	private JTextField taskName; // 업무 제목
-	// private JList<String> taskList;
-	private JLabel timer;
 	private JButton done; // 업무 확인 버튼
 	
 	private boolean checked; // 업무 완료 유무
@@ -40,14 +36,6 @@ public class Task extends JPanel {
 		
 		this.add(taskName, BorderLayout.CENTER);
 	
-		
-		/* 
-		taskList = new JList<String>(tasks);
-		taskList.setPreferredSize(new Dimension(20,40));
-		taskList.setBorder(BorderFactory.createEmptyBorder());
-		this.add(new JScrollPane(taskList), BorderLayout.NORTH);
-		*/
-		
 		done = new JButton("Done");
 		done.setPreferredSize(new Dimension(40,20));
 		done.setFont(new Font("IM혜민 Regular", Font.BOLD, 12));
@@ -55,7 +43,11 @@ public class Task extends JPanel {
 		
 		this.add(done, BorderLayout.EAST);
 		
-		timer = new JLabel();
+		
+		/* timer, stopwatch Panel */
+		
+		Stopwatch timerPanel = new Stopwatch();
+		this.add(timerPanel, BorderLayout.SOUTH);
 		
 	}
 	
