@@ -4,9 +4,10 @@
 <br>
 
 ## Application 기능
-  - 새로운 업무(Task) 생성(index number 갱신)
-  - 완료된 업무 색 변경
-  - 완료된 업무 리스트에서 제거
+  - [x] 새로운 업무(Task) 생성(index number 갱신)
+  - [x] 완료된 업무 색 변경
+  - [x] 각 업무마다 타이머 설정 
+  - [ ] 완료된 업무 리스트에서 제거
 
 <br>
 
@@ -28,7 +29,8 @@
    - taskName
    - done button
    - chekced(boolean)
-
+#### 6. Stopwatch
+  - Timer Pannel (start/stop, reset Button)
  
 <br>
 
