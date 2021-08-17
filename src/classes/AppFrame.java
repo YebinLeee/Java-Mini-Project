@@ -63,6 +63,27 @@ public class AppFrame extends JFrame{
 				revalidate();
 			}
 		});
+		clear.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mousePressed(MouseEvent e)
+			{
+			
+				Component[] listItems = list.getComponents();
+				
+				for(int i=0;i<listItems.length;i++)
+				{
+					if(listItems[i] instanceof Task)
+					{
+						if (((Task) listItems[i]).getChecked() == true) {
+							list.remove(listItems[i]);
+							System.out.println(i + "번째 제거");
+							list.updateNumbers();
+							list.repaint();
+						}
+					}
+				}
+			}
+		});
 	}
 }
 

@@ -67,13 +67,17 @@ public class Task extends JPanel {
 		this.revalidate();
 	}
 	
-	// 
+	// done 버튼 누른 후 상태 바꾸기
 	public void changeState()
 	{
 		this.setBackground(new Color(240, 240, 240));
 		taskName.setBackground(Color.black);
 		taskName.setForeground(Color.orange);
 		checked = true;
+	}
+	
+	public boolean getChecked() {
+		return this.checked;
 	}
 }
 

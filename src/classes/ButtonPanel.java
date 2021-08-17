@@ -25,7 +25,6 @@ public class ButtonPanel extends JButton{
 		
 		this.add(addTask);
 		
-		/*
 		 this.add(Box.createHorizontalStrut(30));
 		 
 		clear = new JButton("Clear Completed Tasks");
@@ -34,7 +33,6 @@ public class ButtonPanel extends JButton{
 		clear.setBackground(Color.white);
 		
 		this.add(clear);
-		*/
 	}
 	
 	public JButton getAddTask() {
