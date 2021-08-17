@@ -7,7 +7,9 @@
   - [x] 새로운 업무(Task) 생성(index number 갱신)
   - [x] 완료된 업무 색 변경
   - [x] 각 업무마다 타이머 설정 
-  - [ ] 완료된 업무 리스트에서 제거
+  - [x] 완료된 업무 리스트에서 제거
+  - [ ] 업무에 대한 카테고리 선택 기능
+  - [ ] DB에 날짜별로 저장
 
 <br>
 
@@ -22,7 +24,7 @@
     - AddTask Button
     - Clear completed Tasks Button
 #### 4. List
-   - Task Lists (GridLayout)
+   - Task Lists
    - Index Numbers Updated
 #### 5. Task
    - index
